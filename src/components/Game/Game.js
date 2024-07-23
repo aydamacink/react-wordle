@@ -1,5 +1,5 @@
 import React from 'react';
-import Input from '../Input';
+import GuessInput from '../GuessInput';
 
 import { sample } from '../../utils';
 import { WORDS } from '../../data';
@@ -12,9 +12,8 @@ console.info({ answer });
 function Game() {
   return (
     <>
-      <div>Put a game here!</div>
       <div>
-        <Input />
+        <GuessInput />
       </div>
     </>
   );
