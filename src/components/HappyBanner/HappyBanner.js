@@ -1,14 +1,14 @@
 import React from 'react';
+import Banner from '../Banner/Banner';
 
-function HappyBanner({ guesses }) {
-  const numberOfGuesses = guesses.length;
+function HappyBanner({ numberOfGuesses }) {
   return (
-    <div className="happy banner">
+    <Banner status="happy">
       <p>
         <strong>Congratulations!</strong> Got it in
         <strong>{`  ${numberOfGuesses} guesses`}</strong>.
       </p>
-    </div>
+    </Banner>
   );
 }
 
